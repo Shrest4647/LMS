@@ -1,0 +1,144 @@
+# Scalar
+scalar Date
+scalar JSON
+
+# types
+type Admin {
+    _id: String!
+    userName: String!
+}
+type Class {
+    _id: String!
+    grade: String!
+    subjects: [Subject]
+    notices: [Notice]
+    classTeacher: Teacher
+    students: [Student]
+    teachers: [Teacher]
+}
+type Subject {
+    _id: String!
+    name: String!
+    teacher: Teacher!
+    notices: [Notice]
+    lessons: [Lesson]
+}
+type Notice {
+    _id: String!
+    date: Date!
+    message: String!
+}
+type Lesson {
+    _id: String!
+    start: Date
+    topic: String!
+    description: String
+    activity: [QuestionAnswer]
+    assignments: [Assignment]
+    subject: Subject
+    createdAt: Date
+    students: [Student]
+    comments: [Comment]
+    visits: [JSON]
+}
+type Assignment {
+    _id: String
+    type: String
+    start: Date
+    end: Date
+    attachment: String
+    credit: Float
+}
+type Comment {
+    _id: String
+    message: String
+    details: JSON
+    reply: Comment
+}
+type Student {
+    _id: String
+    userName: String
+    class: Class
+    lessonAttended: [Lesson]
+    lessonRemaining: [Lesson]
+    assignmentSubmitted: [Assignment]
+    assignmentRemaining: [Assignment]
+    progress: [JSON]
+}
+type Teacher {
+    _id: String
+    userName: String
+    email: String
+    classes: [Class]
+    subjects: [Subject]
+    lessons: [Lesson]
+    assignments: [Assignment]
+}
+type QuestionAnswer {
+    _id: String
+    question: String
+    answer: String
+    info: String
+}
+type AuthData {
+    _id: String
+    userName: String
+    token: String
+}
+
+# Input
+input StudentInput {
+    userName: String
+    password: String
+}
+input TeacherInput {
+    id: String
+    userName: String
+}
+#  Query
+type Query {
+    # admin( userName: String!, password: String! ): AuthData
+    # teacherLogin(userName: String, password: String): AuthData
+    # studentLogin(userName: String, password: String): AuthData
+    class(id: String): Class
+    classByGrade(grade: String): Class
+    subject(id: String): Subject
+    notice(id: String): Notice
+    recentNotice: [Notice]
+    lesson(id: String): Lesson
+    recentLesson: [Lesson]
+    assignment(id: String): Assignment
+    comment(id: String): Comment 
+    student(id: String): Student
+    students: [Student]
+    teacher(id: String): Teacher
+    teachers: [Teacher]
+    questionAnswer(id: String): QuestionAnswer
+
+}
+
+type Mutation {
+    newTeacher(data: JSON): Teacher
+    deleteTeacher(id: String): Boolean
+    newStudent(data: JSON): Student
+    deleteStudent(id: String): Boolean
+    # resetStudentPassword(id: String, password: String ): Student
+    newClass(grade: String): Class
+    deleteClass(id: String): Boolean
+    addNoticeInClass(data: JSON, classId: String): Notice
+    removeNoticeFromClass(id: String, classId: String): Boolean
+    addStudentInClass(data: JSON, classId: String): [Student]
+    # addTeacherInClass(data: [TeacherInput], classId: String): [Teacher]
+    removeStudentFromClass( id: JSON, classId: String ): Boolean
+    # removeTeacherFromClass( id: [String], classId: String ): Boolean
+    #editClassSubjects(data: JSON): [Subject]
+    newSubject(data: JSON, classId: String): Subject
+    # addNoticeInSubject(data: JSON, subjectId: String): Notice
+    # removeNoticeFromSubject(id: String, subjectId: String): Boolean
+    newLesson(data: JSON, subjectId: String): Lesson
+    editLesson(id: String, data: JSON): Lesson
+    lesson(id: String): Lesson
+    addAttenderOnLesson(id: String, studentId: String): Boolean
+    addActivityOnLesson(data: JSON, id: String): Boolean
+    addAssignmentOnLesson(data: JSON, id: String): Boolean
+}

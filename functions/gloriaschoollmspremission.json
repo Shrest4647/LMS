@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "gloriaschoollms",
+  "private_key_id": "3604725a5ca20c67cc08c0609e3e1085a1ee1912",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDS5dkrMbNLJGEW\n5RY/qwj8WngxY+jUHa67QWhR3baZotZMKvFQyzubOdZ8gL5a9Sh3EGAYIurp/0h5\naO+rI6judEQDssJXSgsoMaIDnEX6ctDJUD2Zfs/ToSsR7Hn/NnNHH9p/B8XdrQtO\nYF/UhFxN9CZhEHrVnQ1LJNDjnzzUMAUaVLKJD05sn3G4CUqqqd6TWKH7atJF2nve\n3Va7eAqnZjDdrrRvtYD/0eL/shRmPKZ1+uN7BbNCiPQSe9CK8dZVxiqOVJ0Mt1yk\n5z5qNajX0hcs1popDkQ2F4xSk35mG8hmXrjbqDWGdg4OrifZ8wcjAyddADfK/RKB\n3ugktSHJAgMBAAECggEAAdCgkdKXrGnfvAa0rk+WgDV3G1W0xz6KJmplr26tB51z\nIqyr7voQxUE2K1QgT0AU3RFzAkIqq2DbCtBwX5Sq+4Jco3uCWKX2ep4Sut05bPJY\nAaODJDMHLtcQO9NBKYUacN5BTx6OAV5f3ojNylJpSPJ08hjmNbhoSOFEOvE/4MOV\nA9rdYMymsu5PeZcqzd7aBQ+Ps4XMWREqsmufwvyuN/4JEGms9j4OOkzp9swVPFUA\n3COTIf0rSWo9WvC1YEtCvILL1cFHmC+vR/IrBRHVA9XYy7GPof4gUiTFv10GSqTf\nRwg1yb+D1tlO7li+JgLWuj2qRVC5eME2FVs3xBmSAQKBgQD9xcFXtVckWwo9rlVR\naB7kPwvduYJKznBsz16PpFzgBZqtosUXNC4GsK4toU1xQEOc5WiK/2zLdYXNQAOj\nXBnPvhsbZEOdaT9i6fzXT5ijie+wbp4RDivnyvLZ3QAeEXiSWPWECIambSwAaNGq\n+CEfD8tV4qV/XXSrCRTZ1agL2QKBgQDUv8AvZ61/l3qxXAV/JL3dUcRAIlzJV9yM\nhkWA6YPsmJoDBtUEwlRtcDW+k+6bspLSlAFtj26RS2liM5NEVK60/nY/73YPUEcy\nLnTbpgcx7/1ZValooHC+VqzqrmqujU0BcYBv2c1SHGZLiPWueBEeDZfQIAfA1Z64\nAi84YJm/cQKBgQCV3qRAWCgOoHV71+krGoKj6VfoqhX4d9KNcCo4SqlO5ABlayta\neMZ1zQIQkKJbr8g+cH09GXv27IEIpjV/1HSp62u20Y/c9rsof2eDAM70RhH38FwJ\nVoU3bvPdFldraoX6Z+8W+rIKt4607zJj9gYZggpjvmZewaKVH9fgjf2ggQKBgAfZ\nc0vMdXhJrHsyu/ku79pkk+sR2X6MQVTl91aERxvJnZUTAXUFfnvzMehwKNORyRz/\n3PWf3yJ5N9ApuvtAbJm88bv2J9L00UumryUTgRx0kFJleLSlhsNfC041VTZPfFHb\nUDPQQ2UOKzAKQ5ZGU8taEQnaxK52sz5yxi88US/hAoGAKMmcCvBkij/jjUzjPhFR\npGTYbopr1kZFQhbY1krLi5+4JXV32ztI6A6u0s72Mu0CMGncc5EcYTN8dZPXrO8o\nU0Bj/BUuawjsMEBWKPccAhOEUx2rzyhot4pV9HBhb4QM809cfGyvc5MMjwSKfY+A\n0buTNWvkk9XqqlkC7bmAu0Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-t4tc5@gloriaschoollms.iam.gserviceaccount.com",
+  "client_id": "117895440718705260127",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-t4tc5%40gloriaschoollms.iam.gserviceaccount.com"
+}
